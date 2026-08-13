@@ -65,7 +65,7 @@ object "MiniNFT" {
   // top `code` block is the constructor for MiniNFT
   // the constructor copies `runtime` bytecode into memory and returns this memory segment to the EVM 
   // EVM hashes bytecode and saves hash as account object's `codeHash` in the World State
-  // the actual bytecode is stored in some read-only "code database" hosted on each node seperate from main execution layer
+  // the actual bytecode is stored in the code store hosted on each node seperate from main execution layer
   // the hash works as a pointer to where the bytecode is stored
   
   code {
